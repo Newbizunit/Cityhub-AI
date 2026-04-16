@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cityhub AI – The intelligent platform that transforms urban data into actionable city insights." />
+  <title>Cityhub AI – Smart Cities, Powered by AI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================ NAV -->
+  <header class="nav-wrapper" id="nav">
+    <nav class="nav container">
+      <a href="#" class="nav__logo" aria-label="Cityhub AI home">
+        <span class="logo-icon" aria-hidden="true">⬡</span>
+        <span>Cityhub<strong>AI</strong></span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#use-cases">Use Cases</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#demo" class="btn btn--ghost">Live Demo</a>
+        <a href="#contact" class="btn btn--primary">Get Started</a>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+      <ul role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#use-cases">Use Cases</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#demo" class="btn btn--ghost">Live Demo</a></li>
+        <li><a href="#contact" class="btn btn--primary">Get Started</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================================================== HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="orb orb--3"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="badge">🚀 Now in Public Beta</div>
+        <h1 class="hero__headline">
+          The Intelligence Layer<br />
+          <span class="gradient-text">Cities Have Been Waiting For</span>
+        </h1>
+        <p class="hero__sub">
+          Cityhub AI unifies urban data streams—traffic, energy, permitting,
+          safety—into a single AI brain that predicts, optimises, and acts on
+          behalf of city operations teams.
+        </p>
+        <div class="hero__cta">
+          <a href="#demo" class="btn btn--primary btn--lg pulse">
+            ▶ &nbsp;Watch Live Demo
+          </a>
+          <a href="#features" class="btn btn--outline btn--lg">
+            Explore Features
+          </a>
+        </div>
+        <p class="hero__trust">
+          Trusted by&nbsp;
+          <strong>32 municipalities</strong>&nbsp;across&nbsp;
+          <strong>11 countries</strong>
+        </p>
+      </div>
+
+      <!-- floating dashboard card -->
+      <div class="hero__card container" aria-hidden="true">
+        <div class="dashboard-card">
+          <div class="dashboard-card__header">
+            <span class="dc-dot dc-dot--green"></span>
+            <span class="dc-dot dc-dot--yellow"></span>
+            <span class="dc-dot dc-dot--red"></span>
+            <span class="dc-title">City Operations Dashboard</span>
+          </div>
+          <div class="dashboard-card__body">
+            <div class="metric-row">
+              <div class="metric">
+                <span class="metric__label">Traffic Score</span>
+                <span class="metric__value green">94<small>%</small></span>
+                <span class="metric__change up">↑ 3%</span>
+              </div>
+              <div class="metric">
+                <span class="metric__label">Energy Savings</span>
+                <span class="metric__value blue">18<small>%</small></span>
+                <span class="metric__change up">↑ 2%</span>
+              </div>
+              <div class="metric">
+                <span class="metric__label">Incident Response</span>
+                <span class="metric__value purple">4.2<small>min</small></span>
+                <span class="metric__change down">↓ 1.1</span>
+              </div>
+              <div class="metric">
+                <span class="metric__label">AI Alerts Today</span>
+                <span class="metric__value orange">7</span>
+                <span class="metric__change up">Active</span>
+              </div>
+            </div>
+            <div class="sparkline-row" aria-label="Activity sparkline chart">
+              <div class="sparkline">
+                <svg viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true">
+                  <polyline points="0,35 25,28 50,32 75,18 100,22 125,10 150,14 175,8 200,12"
+                    fill="none" stroke="url(#grad1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <defs>
+                    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#6366f1"/>
+                      <stop offset="100%" stop-color="#22d3ee"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <span class="sparkline-label">Last 8 hours · Real-time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== LOGOS -->
+    <section class="logos" aria-label="Partner cities and organisations">
+      <div class="container">
+        <p class="logos__label">Deployed across leading cities &amp; agencies</p>
+        <ul class="logos__list" role="list">
+          <li>Singapore MaaS</li>
+          <li>Barcelona Smart City</li>
+          <li>NYC DOITT</li>
+          <li>London TfL</li>
+          <li>Tokyo Digital Agency</li>
+          <li>Dubai Future Foundation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================================================== FEATURES -->
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Capabilities</p>
+          <h2>Everything a modern city needs,<br />wired into one AI platform</h2>
+          <p class="section-sub">From real-time sensors to long-range planning, Cityhub AI bridges the gap between raw urban data and confident decision-making.</p>
+        </div>
+        <div class="features__grid">
+
+          <article class="feature-card feature-card--accent">
+            <div class="feature-card__icon" aria-hidden="true">🧠</div>
+            <h3>Urban AI Engine</h3>
+            <p>A purpose-built LLM + multimodal AI stack trained on 10 years of urban datasets. Ask it anything about your city in plain language.</p>
+            <ul class="feature-card__bullets">
+              <li>Natural language queries over city data</li>
+              <li>Predictive anomaly detection</li>
+              <li>Automated policy recommendations</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🚦</div>
+            <h3>Traffic &amp; Mobility</h3>
+            <p>Ingest feeds from cameras, loops, GPS probes, and transit APIs to optimise signal timing and routing at city scale.</p>
+            <ul class="feature-card__bullets">
+              <li>Adaptive signal control</li>
+              <li>Incident auto-detection</li>
+              <li>Multimodal journey analytics</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">⚡</div>
+            <h3>Energy &amp; Sustainability</h3>
+            <p>Monitor grid loads, street-lighting, and building consumption in real time. Forecast demand and trigger automated savings.</p>
+            <ul class="feature-card__bullets">
+              <li>Grid load forecasting</li>
+              <li>Carbon-emission dashboards</li>
+              <li>Renewable integration scoring</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🛡️</div>
+            <h3>Public Safety</h3>
+            <p>AI-powered video analytics and predictive policing tools that prioritise ethics, privacy, and community trust.</p>
+            <ul class="feature-card__bullets">
+              <li>Crowd-density alerts</li>
+              <li>Emergency dispatch routing</li>
+              <li>Privacy-first design (edge inference)</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🏗️</div>
+            <h3>Planning &amp; Permitting</h3>
+            <p>Automate permit processing, zoning analysis, and infrastructure maintenance scheduling with AI-assisted workflows.</p>
+            <ul class="feature-card__bullets">
+              <li>Permit auto-review (days → hours)</li>
+              <li>GIS-integrated zoning AI</li>
+              <li>Predictive maintenance queues</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">📊</div>
+            <h3>Unified Command Centre</h3>
+            <p>A single pane of glass for every department. Customisable dashboards, alerts, and reports—no SQL required.</p>
+            <ul class="feature-card__bullets">
+              <li>Role-based access control</li>
+              <li>Scheduled + on-demand reports</li>
+              <li>API &amp; webhook integrations</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================== HOW IT WORKS -->
+    <section class="how section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Process</p>
+          <h2>From raw data to city action<br />in four steps</h2>
+        </div>
+        <ol class="steps" role="list">
+          <li class="step">
+            <div class="step__number" aria-hidden="true">01</div>
+            <div class="step__body">
+              <h3>Connect Your Data</h3>
+              <p>Plug in existing sensors, SaaS tools, and legacy systems via 200+ pre-built connectors. Zero coding required for standard integrations.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__number" aria-hidden="true">02</div>
+            <div class="step__body">
+              <h3>AI Models Train on Your City</h3>
+              <p>Our platform fine-tunes models on your specific geography, population, and policies to maximise local accuracy.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__number" aria-hidden="true">03</div>
+            <div class="step__body">
+              <h3>Insights Surface Automatically</h3>
+              <p>Anomalies, opportunities, and risks appear on your dashboard before they become problems—with plain-language explanations.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__number" aria-hidden="true">04</div>
+            <div class="step__body">
+              <h3>Act with Confidence</h3>
+              <p>Approve AI-suggested actions or let automations run. Full audit trail kept for compliance and public accountability.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================================================= USE CASES -->
+    <section class="use-cases section" id="use-cases">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Results</p>
+          <h2>Real cities. Real outcomes.</h2>
+        </div>
+        <div class="cases-grid">
+
+          <article class="case-card">
+            <div class="case-card__tag">Traffic</div>
+            <h3 class="case-card__stat">23% reduction</h3>
+            <p>in average peak-hour commute time in Singapore's Marina Bay district after deploying Cityhub AI adaptive signals.</p>
+            <footer class="case-card__footer">
+              <span>🇸🇬 Singapore MaaS · 2024</span>
+            </footer>
+          </article>
+
+          <article class="case-card">
+            <div class="case-card__tag">Energy</div>
+            <h3 class="case-card__stat">€4.2M saved</h3>
+            <p>in annual energy costs for Barcelona's public-lighting network through AI-driven demand forecasting.</p>
+            <footer class="case-card__footer">
+              <span>🇪🇸 Barcelona Smart City · 2024</span>
+            </footer>
+          </article>
+
+          <article class="case-card">
+            <div class="case-card__tag">Planning</div>
+            <h3 class="case-card__stat">87% faster</h3>
+            <p>permit review cycle in New York City after integrating Cityhub AI with DOITT's permitting system.</p>
+            <footer class="case-card__footer">
+              <span>🇺🇸 NYC DOITT · 2023</span>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================== DEMO -->
+    <section class="demo-section section" id="demo">
+      <div class="container demo-section__inner">
+        <div class="demo-section__text">
+          <p class="section-eyebrow">Interactive Demo</p>
+          <h2>See Cityhub AI in Action</h2>
+          <p>Explore our interactive city dashboard. Ask the AI questions, view live simulations, and experience what a smarter city feels like.</p>
+          <ul class="demo-checklist">
+            <li>✓ No sign-up required</li>
+            <li>✓ Pre-loaded with synthetic city data</li>
+            <li>✓ Full feature access for 30 minutes</li>
+          </ul>
+          <button class="btn btn--primary btn--lg" id="open-demo">
+            Launch Demo Environment
+          </button>
+        </div>
+        <div class="demo-section__visual" aria-hidden="true">
+          <div class="demo-screen">
+            <div class="demo-screen__topbar">
+              <span class="dc-dot dc-dot--green"></span>
+              <span class="dc-dot dc-dot--yellow"></span>
+              <span class="dc-dot dc-dot--red"></span>
+              <span style="margin-left:auto;font-size:0.7rem;opacity:0.5;">cityhub.ai/demo</span>
+            </div>
+            <div class="demo-screen__body">
+              <div class="demo-map">
+                <div class="demo-map__grid">
+                  <!-- street grid lines drawn via CSS -->
+                </div>
+                <div class="demo-node demo-node--a pulse-ring" style="top:30%;left:40%;" title="Traffic hub"></div>
+                <div class="demo-node demo-node--b" style="top:55%;left:65%;" title="Energy sensor"></div>
+                <div class="demo-node demo-node--c pulse-ring" style="top:70%;left:30%;" title="Safety camera"></div>
+                <div class="demo-node demo-node--a" style="top:20%;left:70%;"></div>
+                <div class="demo-node demo-node--b pulse-ring" style="top:45%;left:20%;"></div>
+              </div>
+              <div class="demo-chat">
+                <div class="demo-chat__bubble demo-chat__bubble--ai">
+                  <strong>CityAI:</strong> Traffic congestion detected on Ring Road N-7. Rerouting 12% of vehicles. ETA improvement: <span class="green">+4 min</span>.
+                </div>
+                <div class="demo-chat__bubble demo-chat__bubble--user">
+                  What's the energy forecast for tonight?
+                </div>
+                <div class="demo-chat__bubble demo-chat__bubble--ai typing" id="typing-bubble">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= PRICING -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Pricing</p>
+          <h2>Transparent pricing for every city size</h2>
+          <p class="section-sub">All plans include onboarding support and a 30-day free trial. No credit card required.</p>
+        </div>
+        <div class="pricing__grid">
+
+          <article class="pricing-card">
+            <h3>Pilot</h3>
+            <p class="pricing-card__desc">For small municipalities and proof-of-concept projects.</p>
+            <div class="pricing-card__price">
+              <span class="amount">$2,500</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li>✓ Up to 3 data modules</li>
+              <li>✓ 1 city dashboard</li>
+              <li>✓ 5 user seats</li>
+              <li>✓ Community support</li>
+              <li class="muted">✗ AI automation workflows</li>
+              <li class="muted">✗ Custom model training</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline btn--full">Start Free Trial</a>
+          </article>
+
+          <article class="pricing-card pricing-card--featured">
+            <div class="pricing-card__badge">Most Popular</div>
+            <h3>City</h3>
+            <p class="pricing-card__desc">For mid-size cities ready to scale AI across departments.</p>
+            <div class="pricing-card__price">
+              <span class="amount">$9,500</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li>✓ All data modules</li>
+              <li>✓ Unlimited dashboards</li>
+              <li>✓ 50 user seats</li>
+              <li>✓ Priority support (SLA)</li>
+              <li>✓ AI automation workflows</li>
+              <li class="muted">✗ Custom model training</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--full">Start Free Trial</a>
+          </article>
+
+          <article class="pricing-card">
+            <h3>Metro</h3>
+            <p class="pricing-card__desc">For large metro areas requiring bespoke AI and enterprise SLAs.</p>
+            <div class="pricing-card__price">
+              <span class="amount">Custom</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li>✓ Everything in City</li>
+              <li>✓ Unlimited seats</li>
+              <li>✓ Custom model training</li>
+              <li>✓ Dedicated CSM</li>
+              <li>✓ On-premise / private cloud</li>
+              <li>✓ 99.99% SLA</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline btn--full">Contact Sales</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== CONTACT / CTA -->
+    <section class="cta-section section" id="contact">
+      <div class="container cta-section__inner">
+        <h2>Ready to make your city smarter?</h2>
+        <p>Join 32 municipalities already using Cityhub AI. Our team will set up a personalised demo within 24 hours.</p>
+        <form class="cta-form" id="cta-form" novalidate>
+          <div class="cta-form__row">
+            <div class="form-group">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Alex Chen" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" placeholder="alex@city.gov" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="city-name">City / Organisation</label>
+              <input type="text" id="city-name" name="city" placeholder="City of Springfield" required />
+            </div>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg">
+            Request Personalised Demo
+          </button>
+          <p class="form-note">We respect your privacy. No spam, ever.</p>
+        </form>
+        <div class="cta-form__success" id="form-success" hidden>
+          <span class="success-icon">✓</span>
+          <h3>We'll be in touch within 24 hours!</h3>
+          <p>Check your inbox for a confirmation email.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================ FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo" aria-label="Cityhub AI home">
+          <span class="logo-icon" aria-hidden="true">⬡</span>
+          <span>Cityhub<strong>AI</strong></span>
+        </a>
+        <p>Making cities smarter, safer, and more sustainable through the power of AI.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul role="list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#demo">Demo</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul role="list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">GDPR</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Cityhub AI, Inc. All rights reserved.</p>
+        <p>Built with ❤️ for cities of the future.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================= DEMO MODAL -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal">
+      <button class="modal__close" id="modal-close" aria-label="Close demo modal">&times;</button>
+      <h2 id="modal-title">🏙️ Cityhub AI – Interactive Demo</h2>
+      <p>Welcome to the Cityhub AI sandbox environment. This demo uses synthetic data from a fictional city. Full features are available.</p>
+      <div class="modal__features">
+        <div class="modal__feature">
+          <span>🚦</span>
+          <span>Traffic Control</span>
+        </div>
+        <div class="modal__feature">
+          <span>⚡</span>
+          <span>Energy Grid</span>
+        </div>
+        <div class="modal__feature">
+          <span>🛡️</span>
+          <span>Public Safety</span>
+        </div>
+        <div class="modal__feature">
+          <span>🏗️</span>
+          <span>Urban Planning</span>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn--primary btn--full" id="demo-cta">Request Full Access</a>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
